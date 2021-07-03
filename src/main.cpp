@@ -2,6 +2,12 @@
 #include "datastructures/ThreadsafeStack.h"
 #include "datastructures/threadsafe_queue.h"
 
+#include<vector>
+
+using namespace std;
+
+set
+
 int main(int argc, char *argv[])
 {
 	//Threadsafe stack
@@ -24,6 +30,9 @@ int main(int argc, char *argv[])
 	}
 	
 	
-	threadsafe_queue<char*> que;
+	int arr[4][4] = {0};
+
+
+	
 	
 }
