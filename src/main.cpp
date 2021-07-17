@@ -6,10 +6,27 @@
 
 using namespace std;
 
-set
+void scribble()
+{
+	char *str = "Hello";
+	char *str1 = "123";
+	str = str1;
+	cout << *str1;
+
+	int myarray[5];
+	
+	auto myarrayptr = make_unique<int[]>(10);
+	for(int i=0; i < 5 ; i++)
+	{
+		myarrayptr[i] = i;
+	}
+	cout << endl << myarrayptr[0] + 4  << endl;
+	
+}
 
 int main(int argc, char *argv[])
 {
+	scribble();
 	//Threadsafe stack
 	threadsafe_stack<int> ts;
 	ts.push(1);

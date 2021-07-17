@@ -44,7 +44,7 @@ public:
     void wait_and_pop(T &value)
     {
         std::unique_lock<std::mutex> lock(mx);
-        data_cond.wait(lock,[this]{!return !que.empty();});
+        data_cond.wait(lock,[this]{return !que.empty();});
         value = std::move(que.front());
         que.pop();
     }
