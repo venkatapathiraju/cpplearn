@@ -1,3 +1,5 @@
 src/*.o
 output
 /.vs
+output/main
+src/main.o
