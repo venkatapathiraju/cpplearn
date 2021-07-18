@@ -1,9 +1,5 @@
-#include <iostream>
-#include "datastructures/ThreadsafeStack.h"
-#include "datastructures/threadsafe_queue.h"
 
-#include<vector>
-
+#include "myheaders.h"
 using namespace std;
 
 void scribble()
@@ -26,6 +22,8 @@ void scribble()
 
 int main(int argc, char *argv[])
 {
+	learnvector::run();
+	
 	scribble();
 	//Threadsafe stack
 	threadsafe_stack<int> ts;
