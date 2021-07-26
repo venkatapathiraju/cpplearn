@@ -3,3 +3,4 @@
 #include "datastructures/ThreadsafeStack.h"
 #include "datastructures/threadsafe_queue.h"
 #include "vectortest.h"
+#include "classtest.h"

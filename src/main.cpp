@@ -22,6 +22,7 @@ void scribble()
 
 int main(int argc, char *argv[])
 {
+	learnclass::run();
 	learnvector::run();
 	
 	scribble();
